@@ -1,20 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import Clock from './components/Clock';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App text-black text-[50px]">
+      <Clock />
     </div>
   );
 }
