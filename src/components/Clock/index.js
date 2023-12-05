@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import './clock.css';
 
+const hourHandImage = 'images/Group 1500.png'
 const Clock = () => {
     const [time,setTime] = useState(new Date());
     console.log(time);
@@ -25,7 +26,8 @@ const Clock = () => {
 
         {/* <div className="origin-top-left rotate-[51.26deg] w-[27.59px] h-[197.75px] relative">
         </div> */}
-        <div className='hand hour-hand'></div>
+        <div className='hand hour-hand'
+        style={{ backgroundImage: `url(${hourHandImage})`, transform: hourRotation }}></div>
         
         <div className='hand minute-hand'></div>
         <div className='hand second-hand'></div>
