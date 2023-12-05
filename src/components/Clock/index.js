@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import './clock.css';
 
-const hourHandImage = 'images/Group 1500.png'
+import hourHandImage from 'images/Group 1500.png'
 const Clock = () => {
     const [time,setTime] = useState(new Date());
     console.log(time);
